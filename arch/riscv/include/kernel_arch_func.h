@@ -12,6 +12,22 @@
  * other definitions for the RISCV processor architecture.
  */
 
+/**
+ * @file
+ * @ChatGPT Explain
+ *
+ * The code defines an implementation of architecture-specific functions for the RISC-V architecture in the Zephyr operating system.
+ *
+ * The code starts with a series of preprocessor directives (#ifndef, #define, #include) to include the necessary headers and to check if the header file has already been included. 
+ * The code then uses the "extern" keyword with "C" in a set of curly braces to indicate that the following code is written in C.
+ * 
+ * The code then defines several inline functions for initializing the kernel, switching between threads, handling fatal errors, 
+ * checking if the processor is in an interrupt service routine, entering user space, offloading interrupt requests, and flushing floating-point unit (FPU) context.
+ * The code also defines several architecture-specific functions, such as z_riscv_fatal_error, z_riscv_userspace_enter, z_irq_do_offload, z_riscv_flush_local_fpu, and z_riscv_flush_fpu_ipi.
+ * 
+ * Finally, the code ends with another preprocessor directive (#endif) to indicate the end of the header file.
+ */
+
 #ifndef ZEPHYR_ARCH_RISCV_INCLUDE_KERNEL_ARCH_FUNC_H_
 #define ZEPHYR_ARCH_RISCV_INCLUDE_KERNEL_ARCH_FUNC_H_
 
