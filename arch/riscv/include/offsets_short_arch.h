@@ -4,6 +4,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+/**
+ * @file
+ * @ChatGPT Explain
+ *
+ * This code is defining macro constants that correspond to the offsets of various data fields within the memory layout of a RISC-V microcontroller running the Zephyr operating system. 
+ * The code is part of the architecture-specific headers of the Zephyr OS and provides access to the memory locations of the stack pointer (sp), return address (ra), thread pointer (tp), 
+ * and various saved registers (s0-s11) of a running thread. 
+ * The macro constants are calculated based on the values of other constants defined in the offsets.h file. 
+ * The code also includes macros for accessing the locations of data related to floating-point operations, privilege mode switching, and user exception handling. 
+ * The code uses the #ifdef preprocessor directive to conditionally compile the macro definitions based on the presence or absence of certain configuration options. 
+ */
+
 #ifndef ZEPHYR_ARCH_RISCV_INCLUDE_OFFSETS_SHORT_ARCH_H_
 #define ZEPHYR_ARCH_RISCV_INCLUDE_OFFSETS_SHORT_ARCH_H_
 
